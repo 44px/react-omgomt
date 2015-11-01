@@ -1,0 +1,87 @@
+@import 'variables';
+
+.Tagsinput {
+  &,
+  & *,
+  & *::before,
+  & *::after {
+    box-sizing: border-box;
+  }
+
+  & {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: $tag-space-around;
+    font-size: $font-size;
+    line-height: ($tag-height + $tag-space-around);
+    background: $input-background-color;
+    border: 1px solid $input-border-color;
+    border-radius: $input-border-radius;
+  }
+
+  &--focus {
+    border-color: $input-focus-border-color;
+  }
+
+  &__query {
+    max-width: 100%;
+    height: $tag-height;
+    font-size: inherit;
+    border: 0;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    margin-right: $tag-space-around;
+    padding: $tag-padding 0 $tag-padding $tag-padding;
+    height: $tag-height;
+    line-height: 1;
+    color: $tag-text-color;
+    background: $tag-bg-color;
+    border-radius: $tag-border-radius;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+
+  &__remove {
+    display: inline-block;
+    padding: 0 $tag-padding;
+    font-size: inherit;
+    line-height: 1;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &::before {
+      content: '\00d7';
+    }
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 1px;
+  }
+}

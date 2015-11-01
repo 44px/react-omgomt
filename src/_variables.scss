@@ -1,0 +1,27 @@
+$color-primary: #03A9F4;
+$color-primary-dark: #0288D1;
+$color-primary-darkest: #01579B;
+$color-neutral: #9E9E9E;
+$color-text-light: #F5F5F5;
+$color-text-dark: #444;
+
+$font-size: 14px;
+
+// Input
+$input-background-color: #FFF;
+$input-border-color: $color-neutral;
+$input-focus-border-color: $color-primary-dark;
+$input-border-radius: 4px;
+
+// Tag
+$tag-height: 20px;
+$tag-space-around: 4px;
+$tag-padding: 3px;
+$tag-bg-color: $color-primary;
+$tag-text-color: $color-text-light;
+
+$tag-border-radius: 2px;
+
+// Suggestion
+$suggestion-selected-bg: $tag-bg-color;
+$suggestion-selected-color: $tag-text-color;
