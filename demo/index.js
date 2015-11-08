@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {Tagsinput} from './src/Tagsinput';
-import * as demoData from './demoData'
+import {Tagsinput} from 'Tagsinput';
+import * as demoData from './data'
 
 const source = demoData.countries;
 
